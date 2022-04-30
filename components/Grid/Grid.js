@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import GridItem from "../GridItem/GridItem";
 import "react-image-lightbox/style.css";
 import Lightbox from "react-image-lightbox";
+import clsx from "clsx";
 
 export default function Grid({ images }) {
   const [open, setOpen] = useState(false);
@@ -37,7 +38,11 @@ export default function Grid({ images }) {
           imageCaption={""}
         />
       )}
-      <div className="mx-auto grid max-w-screen-2xl grid-cols-6 gap-2 pt-12 lg:grid-cols-12">
+      <div
+        className={clsx(
+          "mx-auto grid max-w-screen-2xl grid-cols-6 gap-2 pt-12 lg:grid-cols-12"
+        )}
+      >
         {images.map((image, index) => (
           <GridItem
             type={image.type}

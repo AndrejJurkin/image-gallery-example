@@ -2,17 +2,6 @@ import React from "react";
 import Image from "next/image";
 import clsx from "clsx";
 
-const sizes = {
-  regular: {
-    width: 500,
-    height: 500,
-  },
-  large: {
-    width: 1000,
-    height: 600,
-  },
-};
-
 export default function GridItem({ image, onClick, type = "regular" }) {
   return (
     <div

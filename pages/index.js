@@ -2,6 +2,7 @@ import Head from "next/head";
 import Navbar from "../components/Navbar/Navbar";
 import Grid from "../components/Grid/Grid";
 import Footer from "../components/Footer/Footer";
+import Links from "../components/Links/Links";
 
 export default function Home() {
   return (
@@ -18,9 +19,12 @@ export default function Home() {
           <h1 className="font-serif text-7xl font-thin">
             Hi, I&apos;m Andrej!
           </h1>
-          <h2 className="text-2xl text-slate-600">
+          <h2 className="mb-12 text-2xl text-slate-600">
             I build stuff for the internet
           </h2>
+          <nav className="mx-auto flex flex-row items-center justify-center gap-8">
+            <Links />
+          </nav>
         </section>
         <Grid images={images} />
       </main>

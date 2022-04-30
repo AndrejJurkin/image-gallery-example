@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Inter, sans-serif"],
-        serif: ["DM Serif Text", "serif"],
+        serif: ["Libre Bodoni", "serif"],
       },
     },
   },

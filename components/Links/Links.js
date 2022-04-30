@@ -4,6 +4,7 @@ import Link from "next/link";
 export default function Links() {
   return (
     <>
+      <Link href="/">Home</Link>
       <Link href="#">About</Link>
       <Link href="#">Contact</Link>
       <Link href="#">Blog</Link>
